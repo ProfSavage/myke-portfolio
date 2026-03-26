@@ -6,7 +6,6 @@ async function start() {
     await animateJob();
     await animateIntroduction();
 
-
 }
 
 async function animateName() {
@@ -58,6 +57,15 @@ function showImageDialog(imageSrc) {
     var dialog = document.getElementById("imageDialog");
     var dialogImage = document.getElementById("dialogImage");
     dialogImage.src = imageSrc;
+    dialog.style.maxWidth = "50vw";
+    dialog.showModal(); 
+}
+
+function showImageDialogUpSize(imageSrc) {
+    var dialog = document.getElementById("imageDialog");
+    var dialogImage = document.getElementById("dialogImage");
+    dialogImage.src = imageSrc;
+    dialog.style.maxWidth = "80vw";
     dialog.showModal(); 
 }
 

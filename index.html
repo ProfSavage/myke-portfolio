@@ -55,9 +55,9 @@
 
 
 
-    <div class="container text-center">
+    <div class="container">
 
-        <div class="row align-items-center justify-content-center section-row-div my-5 p-3 border border-primary border-3 rounded"
+        <div class="row align-items-center justify-content-center section-row-div my-5 p-3 border border-primary border-3 rounded text-center"
             id="home">
 
             <span class="fw-bold display-2" id="home-name"></span>
@@ -89,52 +89,152 @@
         <div class="row align-items-center justify-content-center section-row-div my-5 p-3 border border-primary border-3 rounded"
             id="projects">
 
-            <span class="fs-1 mt-3">PROJECTS</span>
-            <span class="fs-5" id="projects-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span class="fs-1 mt-3 text-center">PROJECTS</span>
+            <span class="fs-5 text-center" id="projects-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptas, voluptate.</span>
 
+            <div class="row">
+
+                <div class="card hover-upward bg-transparent border-primary border-3 text-white my-3 p-3">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img src="resources/digistock-icon.png" class="card-img-left"
+                                alt="DIGIStock Project Icon" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">DIGIStock</h5>
+                                <span class="card-text">
+                                    A Java-based inventory management system designed to manage clothing stock and records. Developed using NetBeans IDE, the system stores and retrieves inventory data using text files, utilizing BufferedReader and BufferedWriter for efficient file handling and data management.
+                                </span>
+                                <br>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                    <icon class="bi bi-filetype-java fs-5 me-2"></icon>
+                                    Java
+                                </a>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                    <icon class="bi bi-braces fs-5 me-2"></icon>
+                                    NetBeans IDE
+                                </a>
+                                <br>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                href="https://github.com/ProfSavage/DIGIStock.git" target="_blank">
+                                <icon class="bi bi-github fs-5 me-2"></icon>
+                                    Code
+                                </a>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                onclick="showImageDialogUpSize('resources/digistock-screenshot.png')">
+                                <icon class="bi bi-display fs-5 me-2"></icon>
+                                Screenshots
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card hover-upward bg-transparent border-primary border-3 text-white my-3 p-3">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img src="resources/blissandblessing-icon.png" class="card-img-left"
+                                alt="Bliss and Blessing Project Icon" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Bliss and Blessing</h5>
+                                <span class="card-text">
+                                    A clothing inventory management system developed using C# and Visual Studio, powered by a Microsoft SQL Server local database. The system supports multiple users connected to a centralized database, enabling efficient management of clothing inventory through real-time data updates and structured inventory records.
+                                </span>
+                                <br>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                    <icon class="bi bi-filetype-cs fs-5 me-2"></icon>
+                                    C#
+                                </a>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                    <icon class="bi bi-braces fs-5 me-2"></icon>
+                                    Visual Studio IDE
+                                </a>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                    <icon class="bi bi-database fs-5 me-2"></icon>
+                                    Microsoft SQL Server
+                                </a>
+                                <br>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                href="https://github.com/ProfSavage/BlissAndBlessing.git" target="_blank">
+                                <icon class="bi bi-github fs-5 me-2"></icon>
+                                    Code
+                                </a>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                onclick="showImageDialog('resources/blissandblessing-screenshot.jpg')">
+                                <icon class="bi bi-display fs-5 me-2"></icon>
+                                Screenshots
+                                </a>
+                                <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                    SS Credit: Shiela
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
         </div>
 
         <div class="row align-items-center justify-content-center section-row-div my-5 p-3 border border-primary border-3 rounded"
             id="certifications">
 
-            <span class="fs-1 mt-3">CERTIFICATIONS</span>
-            <span class="fs-5" id="certifications-description">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit.
-                Voluptas, voluptate.</span>
-
-        </div>
-
-        <div class="row align-items-center justify-content-center section-row-div my-5 p-3 border border-primary border-3 rounded"
-            id="awards">
-
-            <span class="fs-1 mt-3">AWARDS</span>
-            <span class="fs-5" id="awards-description">Achievements Earned Through Innovation, Creativity, and
-                Competition</span>
+            <span class="fs-1 mt-3 text-center">CERTIFICATIONS</span>
+            <span class="fs-5 text-center" id="certifications-description">Credentials That Validate My Skills</span>
 
             <div class="row">
 
                 <div class="col-lg-6 col-md-12 col-sm-12 my-3">
-                    <div class="card bg-transparent border-primary border-3 text-white h-100" onclick="showImageDialog('resources/certificate-codefest-local-2526.jpg')">
-                        <img src="resources/award-local-2526.jpg" class="card-img-top" alt="STI Codefest Locals 2026">
+                    <div class="card hover-upward bg-transparent border-primary border-3 text-white h-100">
+                        <img src="resources/java-certificate.jpg" class="card-img-top"
+                            alt="Java Programming Certificate">
                         <div class="card-body">
-                            <h5 class="card-title">STI Codefest Local 2026 Champion</h5>
-                            <span>
-                                put description here
+                            <h5 class="card-title">Java Fundamentals</h5>
+                            <span class="card-text">
+                                Awarded upon completion of a core academic subject focused on the foundational
+                                principles of programming. The course introduced essential programming concepts using
+                                the Java programming language and provided hands-on development experience through the
+                                NetBeans IDE.
                             </span>
+                            <br>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                <icon class="bi bi-filetype-java fs-5 me-2"></icon>
+                                Java
+                            </a>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                <icon class="bi bi-braces fs-5 me-2"></icon>
+                                NetBeans IDE
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-12 col-sm-12 my-3">
-                    <div class="card bg-transparent border-primary border-3 text-white h-100" onclick="showImageDialog('resources/certificate-codefest-cluster-2425.jpg')">
-                        <img src="resources/award-cluster-2425.jpg" class="card-img-top"
-                            alt="STI Codefest Cluster 2025">
+                    <div class="card hover-upward bg-transparent border-primary border-3 text-white h-100">
+                        <img src="resources/sap-certificate.jpg" class="card-img-top object-fit-cover"
+                            alt="SAP Certificate" style="max-height: 63.5vh;">
                         <div class="card-body">
-                            <h5 class="card-title">STI Codefest Cluster 2025 2<sup>nd</sup> Runner-Up</h5>
-                            <span>
-                                put description here
+                            <h5 class="card-title">SAP Modules</h5>
+                            <span class="card-text">
+                                Completed a hands-on academic course focused on navigating and executing business
+                                processes within the SAP S/4HANA environment. The program covered multiple ERP modules
+                                using the Global Bike business simulation model.
                             </span>
+                            <br>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3">
+                                SAP S/4HANA
+                            </a>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                onclick="showImageDialog('resources/sap-certificate.jpg')">
+                                View Certificate
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -144,6 +244,68 @@
         </div>
 
         <div class="row align-items-center justify-content-center section-row-div my-5 p-3 border border-primary border-3 rounded"
+            id="awards">
+
+            <span class="fs-1 mt-3 text-center">AWARDS</span>
+            <span class="fs-5 text-center" id="awards-description">Achievements Earned Through Innovation, Creativity, and
+                Competition</span>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 col-sm-12 my-3">
+                    <div class="card hover-upward bg-transparent border-primary border-3 text-white h-100">
+                        <img src="resources/award-local-2526.jpg" class="card-img-top" alt="STI Codefest Locals 2026">
+                        <div class="card-body">
+                            <h5 class="card-title">STI Codefest Local 2026 Champion</h5>
+                            <span class="card-text">
+                                A mobile app development competition held annually at STI College as part of the Tagisan
+                                ng Talino (TNT) event.
+                            </span>
+                            <br>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                href="https://github.com/Sherlock2-4/MealOrdering.git" target="_blank">
+                                <icon class="bi bi-github fs-5 me-2"></icon>
+                                Code
+                            </a>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                onclick="showImageDialog('resources/certificate-codefest-local-2526.jpg')">
+                                <icon class="bi bi-envelope-paper fs-5 me-2"></icon>
+                                Certificate
+                            </a>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white m-1 mt-3"
+                                onclick="showImageDialog('resources/meal-ordering-screenshot.png')">
+                                <icon class="bi bi-phone fs-5 me-2"></icon>
+                                Screenshots
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 my-3">
+                    <div class="card hover-upward bg-transparent border-primary border-3 text-white h-100">
+                        <img src="resources/award-cluster-2425.jpg" class="card-img-top"
+                            alt="STI Codefest Cluster 2025">
+                        <div class="card-body">
+                            <h5 class="card-title">STI Codefest Cluster 2025 2<sup>nd</sup> Runner-Up</h5>
+                            <span class="card-text">
+                                A mobile app development competition held annually at STI College as part of the Tagisan
+                                ng Talino (TNT) event.
+                            </span>
+                            <br>
+                            <a class="btn hover-enlarge border-secondary bg-none text-white mt-3"
+                                onclick="showImageDialog('resources/certificate-codefest-cluster-2425.jpg')">
+                                <icon class="bi bi-envelope-paper fs-5 me-2"></icon>
+                                Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row align-items-center justify-content-center section-row-div my-5 p-3 border border-primary border-3 rounded text-center"
             id="hireme">
 
             <span class="fs-1 my-2">HIRE ME</span>
@@ -152,7 +314,7 @@
             <div class="row">
 
                 <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-                    <a class="card bg-transparent border-primary border-3 text-white text-decoration-none h-100"
+                    <a class="card hover-enlarge bg-transparent border-primary border-3 text-white text-decoration-none h-100"
                         href="mailto:dejesusmykelouies@gmail.com">
                         <icon class="bi bi-envelope-at fs-1 mt-3"></icon>
                         <div class="card-body">
@@ -162,7 +324,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-                    <a class="card bg-transparent border-primary border-3 text-white text-decoration-none h-100"
+                    <a class="card hover-enlarge bg-transparent border-primary border-3 text-white text-decoration-none h-100"
                         href="https://www.linkedin.com/in/myke-louie-de-jesus-173a21273/" target="_blank">
                         <icon class="bi bi-linkedin fs-1 mt-3"></icon>
                         <div class="card-body">
@@ -172,7 +334,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-                    <a class="card bg-transparent border-primary border-3 text-white text-decoration-none h-100"
+                    <a class="card hover-enlarge bg-transparent border-primary border-3 text-white text-decoration-none h-100"
                         href="https://www.facebook.com/mykelouie.dejesus.71" target="_blank">
                         <icon class="bi bi-facebook fs-1 mt-3"></icon>
                         <div class="card-body">
@@ -188,12 +350,13 @@
 
     </div>
 
-<!--DIALOGS HERE-->
-<dialog id="imageDialog" class="bg-dark border-primary border-3 rounded">
-    <icon class="bi bi-x-lg mx-2 fs-3 position-absolute top-0 end-0 text-primary" id="closeDialog" style="cursor: pointer;" onclick="closeImageDialog()"></icon>
-    <br>
-    <img src="" alt="Dialog Image" id="dialogImage" class="img-fluid" >
-</dialog>
+    <!--DIALOGS HERE-->
+    <dialog id="imageDialog" class="bg-dark border-primary border-3 rounded">
+        <icon class="bi bi-x-lg mx-2 fs-3 position-absolute top-0 end-0 text-primary" id="closeDialog"
+            style="cursor: pointer;" onclick="closeImageDialog()"></icon>
+        <br>
+        <img src="" alt="Dialog Image" id="dialogImage" class="img-fluid">
+    </dialog>
 
 </body>
 

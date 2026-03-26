@@ -21,9 +21,15 @@ body {
     color: white;
 }
 
-.card:hover{
+.hover-enlarge:hover{
     box-shadow: 8px 8px 8px blue;
     transform:scale(1.1);
+    transition: .5s;
+}
+
+.hover-upward:hover{
+    box-shadow: 8px 8px 8px blue;
+    transform:translateY(-10px);
     transition: .5s;
 }
 
@@ -42,10 +48,12 @@ body {
     height: 200px;
 }
 
+
 #imageDialog {
     max-width: 50vw; 
     height: fit-content;
     outline: none !important;
+}
 
 footer {
     background-color: black;
