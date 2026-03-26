@@ -54,6 +54,22 @@ function delay(ms) {
 
 
 
+function showImageDialog(imageSrc) {
+    var dialog = document.getElementById("imageDialog");
+    var dialogImage = document.getElementById("dialogImage");
+    dialogImage.src = imageSrc;
+    dialog.showModal(); 
+}
+
+function closeImageDialog() {
+    var dialog = document.getElementById("imageDialog");
+    dialog.close();
+}
+
+
+
+
+
 
 
 
@@ -89,3 +105,16 @@ function delay(ms) {
 
 //document.getElementById("home-shield").remove(); Discarded idea remained for my future reference
 //<a class="icon" id="home-shield" onclick="animateName()"><i class="bi bi-shield-lock" style="font-size: 50vh;"></i></a>
+
+
+
+
+//created for memes but maybe useful in the future, who knows?
+// async function hireMeOver(id) { 
+
+//     await delay(500);
+//     var card = document.getElementById(id);
+//     card.innerHTML += "<img src='resources/just-do-it.png' alt='Just Do It'>";
+    
+
+// }

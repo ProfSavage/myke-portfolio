@@ -1,5 +1,5 @@
 .navbar {
-    background-image: url(resources/hacker-background.gif);
+    background: url(resources/hacker-background.gif);
     height: auto;
 }
 
@@ -18,19 +18,34 @@
 }   
 
 body {
-    background: url(resources/tech-background.mp4);
     color: white;
 }
 
-.home-row-div {
-    height: 90vh;
+.card:hover{
+    box-shadow: 8px 8px 8px blue;
+    transform:scale(1.1);
+    transition: .5s;
 }
 
+/* .section-row-div { //removed for dynamic height balik mo nalang future myke pag gusto mo+
+    height: 90vh;
+} */
+
 #home-job {
-    background-image: url(resources/hacker-background.gif);
+    background: url(resources/hacker-background.gif);
     width: fit-content;
     padding: 1rem 2rem; 
 }
+
+#profile-picture {
+    width: 200px;
+    height: 200px;
+}
+
+#imageDialog {
+    max-width: 50vw; 
+    height: fit-content;
+    outline: none !important;
 
 footer {
     background-color: black;
