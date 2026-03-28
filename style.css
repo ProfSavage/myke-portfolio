@@ -8,54 +8,58 @@
 }
 
 #background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
 
 body {
     color: white;
 }
 
-.svg-icon{
-  width: 1.25em;
-  height: 1.25em;
-  font-size: 1.25em;
-  fill:currentColor;
-  margin-right: 0.25em;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
+
+
+.svg-icon {
+    width: 1.25em;
+    height: 1.25em;
+    font-size: 1.25em;
+    fill: currentColor;
+    margin-right: 0.25em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
 }
 
-.svg-icon path{
-  fill:currentColor !important;
+.svg-icon path {
+    fill: currentColor !important;
 }
 
-.hover-enlarge:hover{
+.hover-enlarge:hover {
     box-shadow: 8px 8px 8px blue;
-    transform:scale(1.1);
+    transform: scale(1.1);
     transition: .5s;
 }
 
-.hover-upward:hover{
+.hover-upward:hover {
     box-shadow: 8px 8px 8px blue;
-    transform:translateY(-10px);
+    transform: translateY(-10px);
     transition: .5s;
 }
 
-/* //removed for dynamic height balik mo nalang future myke pag gusto mo+ */
-/* .section-row-div { 
-    min-height: 90vh;
-} */
+
+.section-row-div {
+    /* min-height: 90vh; */
+    /* //removed for dynamic height balik mo nalang future myke pag gusto mo+ */
+    scroll-margin-top: 10vh;
+}
 
 #home-job {
     background: url(resources/hacker-background.gif);
     width: fit-content;
-    padding: 1rem 2rem; 
+    padding: 1rem 2rem;
 }
 
 #profile-picture {
@@ -65,7 +69,7 @@ body {
 
 
 #imageDialog {
-    max-width: 50vw; 
+    max-width: 50vw;
     height: fit-content;
     outline: none !important;
 }
