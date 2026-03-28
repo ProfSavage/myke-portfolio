@@ -30,7 +30,7 @@ async function animateName() {
 
 async function animateJob() {
 
-    let job = "SOFTWARE DEVELOPER";
+    let job = "BACK-END DEVELOPER";
     for (let i = 0; i <= job.length; i++) {
         document.getElementById("home-job").innerHTML = job.substring(0, i);
         await delay(100);
@@ -39,7 +39,7 @@ async function animateJob() {
 
 async function animateIntroduction() {
 
-    let intro = "Put Your tagline here myke, dikapa nakakaisip";
+    let intro = "From concept to code: building technology-driven solutions.";
     for (let i = 0; i <= intro.length; i++) {
         document.getElementById("home-introduction").innerHTML = intro.substring(0, i);
         await delay(50);
@@ -65,7 +65,7 @@ function showImageDialogUpSize(imageSrc) {
     var dialog = document.getElementById("imageDialog");
     var dialogImage = document.getElementById("dialogImage");
     dialogImage.src = imageSrc;
-    dialog.style.maxWidth = "80vw";
+    dialog.style.maxWidth = "90vw";
     dialog.showModal(); 
 }
 
