@@ -12,3 +12,6 @@ SVG Repo: Free SVG Vectors
 
 DVDify - The DVD screensaver for your images
 <a href="https://www.dvdify.com/" target="_blank" class="text-decoration-none"></a>
+
+Saira Stencil One - Google Fonts
+
