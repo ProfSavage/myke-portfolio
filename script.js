@@ -65,15 +65,14 @@ function showImageDialog(imageSrc) {
     var dialog = document.getElementById("imageDialog");
     var dialogImage = document.getElementById("dialogImage");
     dialogImage.src = imageSrc;
-    dialog.style.maxWidth = "50vw";
-    dialog.showModal(); 
-}
 
-function showImageDialogUpSize(imageSrc) {
-    var dialog = document.getElementById("imageDialog");
-    var dialogImage = document.getElementById("dialogImage");
-    dialogImage.src = imageSrc;
-    dialog.style.maxWidth = "90vw";
+    if (window.innerWidth <= 768) {
+        dialog.style.maxWidth = "90vw";
+    } else { 
+        dialog.style.maxWidth = "50vw";
+    }
+
+    
     dialog.showModal(); 
 }
 
