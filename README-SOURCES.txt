@@ -9,3 +9,6 @@ Technology Background Gif Stock Videos by Vecteezy
 
 SVG Repo: Free SVG Vectors
 <a href="https://www.svgrepo.com/" target="_blank"></a>
+
+DVDify - The DVD screensaver for your images
+<a href="https://www.dvdify.com/" target="_blank" class="text-decoration-none"></a>

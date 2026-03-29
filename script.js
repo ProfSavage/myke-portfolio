@@ -5,6 +5,7 @@ async function start() {
     await animateName();
     await animateJob();
     await animateIntroduction();
+    await animateButtons();
 
 }
 
@@ -44,6 +45,13 @@ async function animateIntroduction() {
         document.getElementById("home-introduction").innerHTML = intro.substring(0, i);
         await delay(50);
     }
+
+}
+
+async function animateButtons() {
+
+    var home_button = document.getElementById("home-button");
+    home_button.innerHTML += "<div class='row align-items-center justify-content-center poppins'> <a class='btn hover-enlarge border-primary border-3 bg-none text-white m-1 mt-3 spawn-btn' href='#techstack' style='width: fit-content;'> View Skills </a> <a class='btn hover-enlarge border-primary border-3 bg-primary text-white m-1 mt-3 fw-bold spawn-btn' href='#hireme' style='width: fit-content;'> HIRE ME </a> <a class='btn hover-enlarge border-primary border-3 bg-none text-white m-1 mt-3 spawn-btn' href='#projects' style='width: fit-content;'> View Projects </a> </div>"
 
 }
 

@@ -17,11 +17,17 @@
     z-index: -1;
 }
 
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     color: white;
 }
-
-
 
 .svg-icon {
     width: 1.25em;
@@ -51,7 +57,7 @@ body {
 
 
 .section-row-div {
-    /* min-height: 90vh; */
+    min-height: 90vh;
     /* //removed for dynamic height balik mo nalang future myke pag gusto mo+ */
     scroll-margin-top: 10vh;
 }
@@ -62,9 +68,17 @@ body {
     padding: 1rem 2rem;
 }
 
-#profile-picture {
-    width: 200px;
-    height: 200px;
+.spawn-btn{
+  opacity:1;
+  transform:scale(1);
+  animation:popIn .6s ease forwards;
+}
+
+@keyframes popIn{
+  0%{opacity:0;transform:scale(.8)}
+  60%{opacity:1;transform:scale(1.1)}
+  80%{transform:scale(.95)}
+  100%{transform:scale(1)}
 }
 
 
