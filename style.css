@@ -29,10 +29,23 @@
     font-family: 'Saira Stencil One', sans-serif;
 }
 
-
 .saira-nav {
     font-family: "Saira", sans-serif;
 }
+
+/* Reveal animation from AI pagaralan mo Myke */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 body {
     color: white;
@@ -52,10 +65,26 @@ body {
     fill: currentColor !important;
 }
 
-.hover-enlarge:hover {
-    box-shadow: 8px 8px 8px blue;
-    transform: scale(1.1);
-    transition: .5s;
+.spawn-btn{
+  opacity:1;
+  transform:scale(1);
+  animation:popIn .6s ease forwards;
+}
+
+@keyframes popIn{
+  0%{opacity:0;transform:scale(.8)}
+  60%{opacity:1;transform:scale(1.1)}
+  80%{transform:scale(.95)}
+  100%{transform:scale(1)}
+}
+
+.hover-enlarge{
+  transition: transform .5s, box-shadow .5s;
+}
+
+.hover-enlarge:hover{
+  transform:scale(1.1);
+  box-shadow:8px 8px 8px blue;
 }
 
 .hover-upward:hover {
@@ -75,19 +104,6 @@ body {
     background: url(resources/hacker-background.gif);
     width: fit-content;
     padding: 1rem 2rem;
-}
-
-.spawn-btn{
-  opacity:1;
-  transform:scale(1);
-  animation:popIn .6s ease forwards;
-}
-
-@keyframes popIn{
-  0%{opacity:0;transform:scale(.8)}
-  60%{opacity:1;transform:scale(1.1)}
-  80%{transform:scale(.95)}
-  100%{transform:scale(1)}
 }
 
 

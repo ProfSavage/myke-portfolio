@@ -51,13 +51,28 @@ async function animateIntroduction() {
 async function animateButtons() {
 
     var home_button = document.getElementById("home-button");
-    home_button.innerHTML += "<div class='row align-items-center justify-content-center poppins'> <a class='btn hover-enlarge border-primary border-3 bg-none text-white m-1 mt-3 spawn-btn' href='#techstack' style='width: fit-content;'> View Skills </a> <a class='btn hover-enlarge border-primary border-3 bg-primary text-white m-1 mt-3 fw-bold spawn-btn' href='#hireme' style='width: fit-content;'> HIRE ME </a> <a class='btn hover-enlarge border-primary border-3 bg-none text-white m-1 mt-3 spawn-btn' href='#projects' style='width: fit-content;'> View Projects </a> </div>"
+    home_button.innerHTML += "<div class='row align-items-center justify-content-center poppins spawn-btn'> <a class='btn hover-enlarge border-primary border-3 bg-none text-white m-1 mt-3' href='#techstack' style='width: fit-content;'> View Skills </a> <a class='btn hover-enlarge border-primary border-3 bg-primary text-white m-1 mt-3 fw-bold' href='#hireme' style='width: fit-content;'> HIRE ME </a> <a class='btn hover-enlarge border-primary border-3 bg-none text-white m-1 mt-3' href='#projects' style='width: fit-content;'> View Projects </a> </div>"
 
 }
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
+// Animation show from ai learn in myke
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+// Tell the observer which elements to watch
+const hiddenElements = document.querySelectorAll('.reveal');
+hiddenElements.forEach((el) => observer.observe(el));
 
 
 
