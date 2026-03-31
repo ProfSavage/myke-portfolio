@@ -11,7 +11,7 @@ async function start() {
 
 async function animateName() {
 
-    var name = "MYKE LOUIE DE JESUS";
+    var name = "MYKE LOUIE DE&nbsp;JESUS";
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=~`|\\:;\"\'<>,.?/ '.split('');
 
 
@@ -69,7 +69,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
-
+// omg gets ko, hidden elements yung list ng mga bibigyan ng animation, yung observer mag dedecide when ishshow yung elements 
 // Tell the observer which elements to watch
 const hiddenElements = document.querySelectorAll('.reveal');
 hiddenElements.forEach((el) => observer.observe(el));

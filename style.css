@@ -39,7 +39,7 @@
   transform: translateY(30px);
   transition: all 0.8s ease-out;
 }
-
+/* Gets kona from state to top nya to the state sa bottom smooth animation dahil sa transition */
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
